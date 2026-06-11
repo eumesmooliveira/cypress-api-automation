@@ -1,24 +1,26 @@
 # Cypress API Automation
 
-Projeto desenvolvido durante o Dia 2 do Bootcamp QA Automation da QAzando.
+Projeto de automação de testes focado em Back-end e APIs REST, desenvolvido para garantir a confiabilidade, segurança e o formato correto das respostas dos serviços.
 
-## 🚀 Objetivo
-Automação de testes de API utilizando Cypress e JavaScript para validar cenários de busca de dispositivos, focando em testes de sucesso e tratamento de erros (validação de status code e corpo da resposta).
+## ⚙️ Tecnologias Utilizadas
+* Cypress (utilizando `cy.request()`)
+* JavaScript
+* Node.js
 
-## 🛠️ Tecnologias utilizadas
-* **Cypress** (Framework de automação)
-* **JavaScript**
-* **Postman** (Validação e suporte)
-* **Git/GitHub** (Versionamento)
+## 📋 Cenários Automatizados
+* Validação de retornos com sucesso (Status Code `200 OK` e `201 Created`).
+* Tratamento e validação de erros (Status Code `400 Bad Request`, `401 Unauthorized`, `404 Not Found`).
+* Validação de Contrato (JSON Schema) para garantir a estrutura do payload de resposta.
+* Testes de CRUD (Create, Read, Update, Delete) utilizando os métodos `POST`, `GET`, `PUT` e `DELETE`.
+* Medição de tempo de resposta da API.
 
-## ⚙️ Como rodar o projeto
+## 🚀 Como executar o projeto
 
-1. Clone este repositório: 
-   `git clone https://github.com/eumesmooliveira/cypress-api-automation.git`
-2. Instale as dependências: 
-   `npm install`
-3. Abra o Cypress: 
-   `npx cypress open`
+### Pré-requisitos
+É necessário ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
----
-*Projeto versionado com sucesso.*
+### Instalação e Execução
+1. Clone este repositório para sua máquina local.
+2. Acesse a pasta do projeto via terminal e instale as dependências executando:
+```bash
+npm install
